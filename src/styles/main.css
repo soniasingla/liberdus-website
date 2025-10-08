@@ -2258,7 +2258,7 @@ body {
     }
     
     .nav-menu a {
-        padding: 8px 25px;
+        padding: 6px 25px;
         border-bottom: 1px solid var(--border);
         font-size: 1rem;
         display: block;
