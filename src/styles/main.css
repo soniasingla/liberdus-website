@@ -481,7 +481,8 @@ body {
     margin-bottom: var(--space-10);
     backdrop-filter: blur(20px);
     box-shadow: var(--shadow);
-    animation: float 6s ease-in-out infinite;
+    animation: float 6s ease-in-out;
+    animation-iteration-count: 10;
 }
 
 @keyframes float {
@@ -599,7 +600,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: phone-float 8s ease-in-out infinite;
+    animation: float 6s ease-in-out;
+    animation-iteration-count: 10;
 }
 
 .chat-screenshot {
