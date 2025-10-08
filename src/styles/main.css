@@ -2247,6 +2247,9 @@ body {
         transition: right 0.3s ease;
         z-index: 9999;
         overflow-y: auto;
+        overflow-x: hidden;
+        -webkit-overflow-scrolling: touch;
+        scroll-behavior: smooth;
         box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
     }
     
@@ -2260,17 +2263,30 @@ body {
     }
     
     .nav-menu a {
-      padding: 6px 20px 5px 20px;
-      border-bottom: 1px solid var(--border);
-      font-size: 0.9rem;
-      display: flex;
-      align-items: center;
-      width: 100%;
-      margin: 0;
-      line-height: 1.0;
-      height: 26px;
-      box-sizing: border-box;
-  }
+        padding: 12px 20px;
+        margin: 1px 12px;
+        border: none;
+        border-radius: 8px;
+        background: transparent;
+        color: var(--text-secondary);
+        font-size: 0.95rem;
+        font-weight: 600;
+        text-decoration: none;
+        transition: all 0.2s ease;
+        display: block;
+        width: calc(100% - 24px);
+    }
+    
+    .nav-menu a:hover {
+        background: var(--bg-glass);
+        color: var(--primary);
+        transform: none;
+    }
+    
+    .nav-menu {
+        padding: 20px 0;
+        gap: 0;
+    }
     
     .nav-dropdown {
         display: none; /* Hide entire dropdown section in mobile */
